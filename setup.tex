@@ -1,0 +1,43 @@
+\documentclass{article}
+
+
+\usepackage{jfrExamplee,times} % Define format
+\usepackage{IEEEtrantools}
+
+%USE PACKAGES
+\usepackage{apalike}     %for references
+\let\bibhang\relax       %fixes warning/error for natbib redefining bibhang
+\usepackage[round, longnamesfirst, authoryear, sort]{natbib} %uses natbib in style of apalike %FIXME still does not meet reference style defined in http://www.journalfieldrobotics.org/forms/JFRauthorInstructions.pdf
+\usepackage{epsfig}
+\usepackage{usnomencl}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage{booktabs}     % Better tables
+\usepackage{tabulary}     % Support longer table cells
+\usepackage{tablefootnote}
+\usepackage{accents}
+\ifx\isdraft\undefined
+\usepackage[disable]{todonotes}
+\else
+\usepackage{todonotes}
+\fi
+
+%Macros
+\input{defs.tex}
+
+\title{\mytitle}
+\author{\myauthor}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\myabstract
+\end{abstract}
