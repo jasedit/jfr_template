@@ -22,10 +22,11 @@
 \usepackage{tabulary}     % Support longer table cells
 \usepackage{tablefootnote}
 \usepackage{accents}
-\ifx\isdraft\undefined
+
+\ifx\isdraft\undefined    % enables notes to be used in MMD in format <!--\todo{note text}--> when paper defines `isdraft:1` at the preamble
 \usepackage[disable]{todonotes}
 \else
-\usepackage{todonotes}
+\usepackage[textsize=tiny]{todonotes}
 \fi
 
 %Macros
