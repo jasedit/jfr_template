@@ -29,6 +29,12 @@
 \usepackage[textsize=tiny]{todonotes}
 \fi
 
+\ifx\spacedouble\undefined %makes paper doublespaced if you have spacedouble:1 at preamble
+\else
+\usepackage{setspace}
+\doublespacing
+\fi
+
 %Macros
 \input{defs.tex}
 
