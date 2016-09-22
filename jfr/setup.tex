@@ -28,10 +28,10 @@
 \renewcommand\[{\begin{equation}}
 \renewcommand\]{\end{equation}}
 
-\ifx\spacedouble\undefined %makes paper doublespaced if you have spacedouble:1 at preamble
+\ifx\mylinespace\undefined %makes paper doublespaced if you have spacedouble:1 at preamble
 \else
 \usepackage{setspace}
-\doublespacing
+\mylinespace
 \fi
 
 \title{\mytitle}
