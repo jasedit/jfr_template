@@ -24,15 +24,14 @@
 \usepackage{accents}
 \usepackage{capt-of}
 \usepackage{xfrac}
+\usepackage{setspace}
+
+\renewcommand{\sectionautorefname}{Section}
+\renewcommand{\subsectionautorefname}{Subsection}
+\renewcommand{\subsubsectionautorefname}{Subsubsection}
 
 \renewcommand\[{\begin{equation}}
 \renewcommand\]{\end{equation}}
-
-\ifx\mylinespace\undefined %makes paper doublespaced if you have spacedouble:1 at preamble
-\else
-\usepackage{setspace}
-\mylinespace
-\fi
 
 \title{\mytitle}
 \author{\myauthor}
@@ -42,6 +41,11 @@
 \maketitle
 
 \clearpage
+
+\ifx\mylinespace\undefined %If mylinespace is defined, used for setting document spacing
+\else
+\mylinespace
+\fi
 
 \begin{abstract}
   \input{\myabstract}
